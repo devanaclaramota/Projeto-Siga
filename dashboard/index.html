@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="">
+    </header>
+    <main>
+        <form action="#" method="post">
+            <div class="user">
+                <label for="user">Usuário:</label>
+                <input autocomplete="off" placeholder="    Digite seu CPF" type="text" name="user" id="cpf">
+            </div>
+            <div class="password">
+                <label for="password">Senha:</label>
+                <input placeholder="    Digite sua senha" type="password">
+                <span>Esqueceu a senha?</span>
+            </div>
+            <div class="btn">
+                <button><a href="dashboard.html">Confirmar</a> </button>
+                <p> <a href="#" target="_blank" rel="noopener noreferrer">Problemas com o acesso?</a> </p>
+            </div>
+        </form>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script>
+        $('#cpf').mask('000-000-000-00')
+    </script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #212529;
+  border-bottom: 8px solid #A02C2C;
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+header img {
+  padding: 30px;
+  cursor: pointer;
+}
+header input {
+  width: 234px;
+  padding: 8px;
+}
+
+.menu {
+  background-color: #212529;
+  border-right: 22px solid #A02C2C;
+  display: block;
+  position: absolute;
+  width: 0px;
+  height: 100%;
+  transition: 0.6s;
+  z-index: 1000;
+  visibility: hidden;
+  overflow-y: hidden;
+}
+.menu ul li {
+  background-color: #212529;
+  list-style: none;
+  height: 39px;
+}
+.menu ul li:hover {
+  background-color: #34383D;
+}
+.menu ul li a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+}
+
+.active {
+  width: 300px;
+  visibility: visible;
+  overflow-y: auto;
+}
+
+.sub-consulta, .ensino-teste, .solicitac, .account {
+  background-color: #212529;
+  color: white;
+  visibility: hidden;
+  display: block;
+  position: absolute;
+  z-index: 1000;
+}
+
+.open-sub, .open-sub-ensino, .open-solicitac, .open-account {
+  visibility: visible;
+}
+
+.notas {
+  width: 320px;
+  margin: auto;
+}
+.notas .head-tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+}
+.notas .tab {
+  margin: auto;
+}
+.notas .tab thead {
+  background-color: #bfc0c1;
+}
+.notas .tab thead th {
+  font-size: 12px;
+  padding: 8px;
+}
+.notas .tab tbody tr {
+  border-bottom: 1px solid black;
+}
+.notas .tab tbody td {
+  text-align: center;
+}
+
+.plano {
+  margin: 30px;
+}
+.plano span {
+  font-size: 0.8em;
+}
+.plano .paragraf {
+  margin-top: 10px;
+}
+.plano .paragraf h4 {
+  padding-left: 20px;
+}
+.plano .carga table {
+  background-color: #bfc0c1;
+}
+.plano .carga table tr {
+  width: 300px;
+  border-bottom: 1px solid #212529;
+}
+.plano .carga table tr td {
+  width: 150px;
+  text-align: center;
+}
+
+.contrato, .perfil, .grafico {
+  margin: 20px;
+}
+
+.grade {
+  margin: 20px;
+}
+.grade td, .grade th {
+  border: 1px solid black;
+}
+.grade th {
+  width: 80px;
+  text-align: center;
+}
+.grade td {
+  width: 80px;
+  text-align: center;
+}
+.grade .seg {
+  text-align: end;
+}/*# sourceMappingURL=styles-dash.css.map */
